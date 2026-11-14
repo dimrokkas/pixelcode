@@ -1,0 +1,528 @@
+/* ===== GENERAL SETTINGS ===== */
+
+body {
+    background-color: #f2f3f5;
+    font-family: Arial, sans-serif;
+    color: #243b5a;
+    margin: 0;
+}
+
+/* ===== HEADINGS AND TEXT ===== */
+
+h1 {
+    font-size: 36px;
+    text-align: left;
+}
+
+.tagline {
+    font-size: 24px;
+    text-align: left;
+    margin-top: 16px;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: #243b5a;
+    color: #f2f3f5;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    margin: 0 auto;
+}
+
+.header-info {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+
+
+
+/* ===== NAVIGATION MENU ===== */
+
+nav {
+    font-size: 24px;
+    text-align: right;
+}
+
+.menu {
+    align-self: center;
+    display: flex;
+    gap:25px;
+    flex-shrink: 0;
+}
+
+.menu a {
+    color: #f2f3f5;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #f2f3f5;
+    color: #243b5a;
+}
+
+/* ===== MAIN CONTENT AND IMAGES ===== */
+
+.profile-image {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: auto; 
+    margin-top: 30px; 
+}
+
+/* ===== SECTIONS ===== */
+
+section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: #243b5a;
+    color: #f2f3f5;
+    padding: 20px;
+    text-align: center;
+    margin: 30px 0 auto;
+}
+
+/* ===== ABOUT PAGE ===== */
+
+h2 {
+    text-align: center;
+    padding: 26px;
+    margin-bottom: 26px;
+    font-size: 36px;
+    color: #243b5a;
+    text-decoration: underline;
+}
+.about-content {
+    background-color: white;
+    width: 83%;
+    padding: 20px;
+    margin: 40px auto;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about-content p {
+    line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.my-photo-image {
+    width: 300px;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== SKILLS PAGE ===== */
+
+.skills-title {
+    text-align: center;
+    font-size: 36px;
+    color: #243b5a;
+    margin-bottom: 20px;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.education {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.education li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.ptyxio {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.certification {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.certification li {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 20px; 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.technical-skills {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.technical-skills li {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 20px; 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ptyxio:hover, 
+.toeic:hover,
+.web-pages:hover,
+.social-media:hover,
+.html:hover,
+.css:hover,
+.javascript:hover  {
+    transform: scale(1.08);
+}
+
+.ptyxio:hover,
+.toeic:hover,
+.web-pages:hover,
+.social-media:hover {
+    cursor: pointer;
+}
+
+.ptyxio,
+.toeic,
+.web-pages,
+.social-media,
+.html,
+.css,
+.javascript {
+    transition: transform 0.3s ease;
+}
+
+
+/* ===== PROJECTS PAGE ===== */
+
+.my-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 18px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.my-project img:hover {
+    transform: scale(1.08);
+}
+
+.my-project img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.my-project ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.my-project li {
+    background-color: #dceaf5;
+    color: #243b5a;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+
+/* ===== CONTACT PAGE ===== */
+
+form {
+    background-color: white;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 8px;
+    margin-top: 4px;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #243b5a;
+    color: white;
+    font-size: 16px;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #d6d9df;
+    color: #243b5a;
+}
+
+/* ===== lightbox sthn skills ===== */
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+#lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #243b5a;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ===== success-message στην CONTACT ==== */
+
+#success-message {
+    color: #218838;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#success-message span {
+    font-size: 26px;
+    margin-right: 8px;
+}
+
+
+/* ===== RESPONSIVE (tablets, smartphons etc.) ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+        .menu {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+}
+
+@media (max-width: 600px) {
+
+    .my-photo-image {
+        float: none;
+        display: block;
+        max-width: 100%;
+        margin: 10px auto 20px;
+    }
+
+    form {
+     width: 100%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+    font-size: 28px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
+
+    .menu {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 15px;
+       gap: 15px;
+    }
+
+    .profile-image {
+        width: 95%;
+       margin-top: 20px;
+    }
+
+    .about-content {
+        width: 95%;
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 28px;
+       padding: 15px;
+    }
+
+    .skills {
+     width: 95%;
+        font-size: 24px;
+    }
+
+    .skills-title {
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    .education li,
+    .certification li,
+    .technical-skills li {
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    .my-project {
+        width: 95%;
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    .my-project img {
+        max-width: 100%;
+    }
+
+    form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    label {
+        font-size: 17px;
+    }
+
+    button {
+        padding: 13px 20px;
+    }
+}

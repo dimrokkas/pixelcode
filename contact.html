@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Επικοινωνία | Δημήτρης Ρόκκας</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-info">
+            <h1>Δημήτρης Ρόκκας</h1>
+            <p class="tagline">Web Developer | Code Designing</p>
+        </div>
+        <nav class="menu">
+           <a href="index.html">Αρχική</a>
+            <a href="about.html">Σχετικά</a>
+            <a href="skills.html">Δεξιότητες</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Επικοινωνία</a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <h2>Επικοινωνία</h2>
+        <form id="contact-form" action="https://formspree.io/f/xkjrgzjw" method="POST">
+            <div class="form-group">
+                <label for="onoma">Ονοματεπώνυμο:</label>
+                <input type="text" id="onoma" name="onoma" placeholder="Συμπληρώστε το όνοματεπώνυμό σας" minlength="3" maxlength="40" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Συμπληρώστε το email σας" required>
+            </div>
+
+            <div class="form-group">
+                <label for="thema">Θέμα:</label>
+                <input type="text" id="thema" name="thema" placeholder="Θέμα" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Μήνυμα:</label>
+                <textarea id="message" name="message" placeholder="Γράψτε το μήνυμά σας" maxlength="150" required></textarea>
+            </div>
+            <button type="submit">Αποστολή</button>
+        </form>
+        <p id="success-message" hidden>
+            <span>✓</span> Το μήνυμά σας απεστάλη επιτυχώς!
+        </p>
+    </main>
+
+    <footer>
+        <img src="images/logo.png" alt="Dimitris Rokkas Web Developer Logo" width="200" height="100">
+        <hr>
+        <div class="footer-info">
+            <p>Designed and Developed by Dimitris Rokkas</p>
+            <p>© 2026 Dimitris Rokkas. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
